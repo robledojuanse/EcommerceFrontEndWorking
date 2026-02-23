@@ -15,7 +15,7 @@ export interface ApiResponse<T> {
 export class ApiService {
     private http = inject(HttpClient);
     // Ideally this comes from an environment file
-    private readonly baseUrl = 'http://localhost:3000/api';
+    private readonly baseUrl = 'https://vercel.com/juan-robledos-projects-fe40c20f/ecommerce-front-end-working-s8qw';
 
     get<T>(path: string, params?: any): Observable<ApiResponse<T>> {
         return this.http.get<ApiResponse<T>>(`${this.baseUrl}${path}`, { params });
