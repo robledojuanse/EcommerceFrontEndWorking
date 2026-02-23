@@ -10,7 +10,7 @@ import { CartService } from './features/cart/cart.service';
   template: `
     <header class="app-header">
       <div class="header-container">
-        <h1 routerLink="/" class="logo" > <img src="assets/logo.svg" style="width: 50px; height: 50px; margin-right: 20px;" alt="Logo"> </h1><div style="margin-top:-15px; margin-left: -80%;" > Shelby </div>
+        <h1 routerLink="/" class="logo" > <img src="assets/logo.svg" style="width: 70px; height: 60px; margin-right: 20px;" alt="Logo"> </h1><div style="margin-top:-15px; margin-left: -80%;" >  </div>
         <nav class="nav-links">
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Catalog</a>
           <a routerLink="/cart" routerLinkActive="active" class="cart-link">

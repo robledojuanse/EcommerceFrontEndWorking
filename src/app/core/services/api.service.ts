@@ -17,9 +17,15 @@ export class ApiService {
     // Ideally this comes from an environment file
     private readonly baseUrl = 'https://ecommercebackendshelby.vercel.app/api';
 
+    // get<T>(path: string, params?: any): Observable<ApiResponse<T>> {
+    //     return this.http.get<ApiResponse<T>>(`${this.baseUrl}${path}`, { params });
+    // }
+
     get<T>(path: string, params?: any): Observable<ApiResponse<T>> {
-        return this.http.get<ApiResponse<T>>(`${this.baseUrl}${path}`, { params });
-    }
+  // Aseguramos que el path empiece con / si no lo tiene
+  const urlPath = path.startsWith('/') ? path : `/${path}`;
+  return this.http.get<ApiResponse<T>>(`${this.baseUrl}${urlPath}`, { params });
+}
 
     post<T>(path: string, body: any): Observable<ApiResponse<T>> {
         return this.http.post<ApiResponse<T>>(`${this.baseUrl}${path}`, body);
