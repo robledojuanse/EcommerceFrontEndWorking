@@ -20,7 +20,7 @@
     "useDefineForClassFields": false,
     "paths": {
       "@shared/*": [
-        "../../shared/*"
+        "src/shared/*"
       ]
     },
     "lib": [
