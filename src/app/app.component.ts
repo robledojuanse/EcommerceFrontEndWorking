@@ -28,7 +28,7 @@ import { CartService } from './features/cart/cart.service';
     </main>
 
     <footer class="app-footer">
-      <p>&copy; 2026 Lightweight Marketplace MVP</p>
+      <p>&copy; 2026 Juan Robledo to Shelby American</p>
     </footer>
   `,
   styleUrls: ['./app.component.css']

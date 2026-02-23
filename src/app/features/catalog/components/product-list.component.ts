@@ -9,9 +9,8 @@ import { CartService } from '../../cart/cart.service';
   imports: [CommonModule],
   template: `
     <div class="product-container">
-      <h2>Product Catalog</h2> 
-      </br>
-      <h5>by Juan Robledo</h5>
+      <h2>Product Catalog</h2>       
+      <div><h5>by Juan Robledo</h5></div>
 
       <div *ngIf="loading$ | async" class="loading-state">
         <div class="spinner"></div>
